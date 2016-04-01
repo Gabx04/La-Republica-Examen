@@ -2,4 +2,11 @@ mixin redsocial(alt)
 	p.crop
 		a(href="#")
 			img(src="assets/image/social_sprite.png", alt= alt)
+mixin columnistas(src, nombre, titular)
+	.node
+		.columnista.text-center
+			.foto-perfil
+				img(src= src, alt= nombre)
+			a.nombre nombre
+			p.titular= titular
 

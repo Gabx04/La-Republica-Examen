@@ -6,32 +6,42 @@ html(lang='es')
         link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
         link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
         link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
-        link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
-        link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
         link(rel='stylesheet', type='text/css', href='assets/css/main.css')
     body
-        include _variables
-        include _extends
-        include _mixins
+        include ./_variables
+        include ./_extends
+        include ./_mixins
         
         section#portada
             .container
                 .row
-                    .hidden-xs.col-md-2
-                    .col-xs-16
+                    .col-xs-12
                         p.titular-principal guerra en la municipalidad de lima metropolitana
                 .row
-                    .col-xs-16.col-md-8
+                    .col-xs-12.col-md-6
                         a(href="#").portada-principal
                             p JNE inpulsará campaña en favor de la aprobación de la Reforma Electoral
-                    .col-xs-16.col-md-8
-                        a(href="").portada-secundaria.uno
+                    .col-xs-12.col-md-6
+                        a(href="#").portada-secundaria.uno
                             p Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones |Fotos
-                        a(href="").portada-secundaria.dos
+                        a(href="#").portada-secundaria.dos
                             p Sub 20 Perú vs Paraguay: bicolor empató 1-1  y pasó al hexagonal final del Sudamericano |Video
         section#columnistas
+            .container
+                .row
+                    .col-xs-12
+                        .columnistas
+                            h2 
+                                a columnistas
+                            .slider.slick-slider
+                                .slick-list
+                                    .slick-track
+                                        .slick-slide
+                                            +columnistas("assets/image/img-columnistas.jpg", "Mario Vargas Llosa",  "Megarrenuncias apulpinantes")
+                                                
+                                                    
                     
 
 
