@@ -5,7 +5,8 @@ html(lang='es')
         title Home
         link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
         link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
-        link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+        link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
@@ -17,15 +18,21 @@ html(lang='es')
         
         section#portada
             .container
-                .row                    
-                    p.titular-principal guerra en la municipalidad de lima metropolitana
                 .row
-                    .col-xs-12.col-md-6
+                    .hidden-xs.col-md-2
+                    .col-xs-16
+                        p.titular-principal guerra en la municipalidad de lima metropolitana
+                .row
+                    .col-xs-16.col-md-8
                         a(href="#").portada-principal
                             p JNE inpulsará campaña en favor de la aprobación de la Reforma Electoral
-                    .col-xs-12.col-md-6
-                        a(href="") .portada-secundaria
-                            p Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones |Fotos y más
+                    .col-xs-16.col-md-8
+                        a(href="").portada-secundaria.uno
+                            p Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones |Fotos
+                        a(href="").portada-secundaria.dos
+                            p Sub 20 Perú vs Paraguay: bicolor empató 1-1  y pasó al hexagonal final del Sudamericano |Video
+        section#columnistas
+                    
 
 
         script(src='http://code.jquery.com/jquery-1.11.2.min.js')
