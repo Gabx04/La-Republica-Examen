@@ -1,0 +1,92 @@
+doctype html
+html(lang='es')
+    head
+        meta(charset='UTF-8')
+        title Home
+        link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+        link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+    mixin a
+        li Al fondo hay sitio
+        li Alejandro Toledo
+        li Aliabza Lima
+        li Alianza Lima
+        li Banco de la Nación
+        li Barack Obama
+    mixin universidad
+        li Universidad César Vallejo
+        li Universidad San Martín
+    mixin bayern
+        li Bayern Munich
+        li Bayern Munich
+        li BBVA
+        li Xbox 
+        li BCP
+
+    body
+        footer
+            .container
+                .row
+                    .col-lg-4.col-md-12.col-xs-12
+                        img(src="assets/image/logo-grupo-la-republica.png")
+                        h3 Grupo La Republica Digital
+                        p Jr Camaná 320 Cercado de Lima Teléfono: 711-6000 (Central Telefonica)
+                        p.reserved Todos los derechos reservados - 2015
+                    hr
+                    .col-lg-2.col-md-12.col-xs-12
+                        ul
+                            li Roger Federed
+                            li SBS 
+                            li Sacrlett Johansson
+                            li Scotiabank
+                            li Selena Gómez
+                            li Spiderman
+                            li Sporting Cristal
+                            li Sunat
+                            li Telefónica del Perú
+                            li The Walking Dead
+                            li Twitter
+                            +universidad
+                            li Universitario de Deportes
+                            li Xbox
+                            li Youtube
+                            +bayern
+                    .col-lg-2.col-md-12.col-xs-12
+                        ul
+                            +a
+                           +universidad
+                             li Barcelona
+                            +bayern
+                             li Batman
+                            +bayern
+                    .col-lg-2.col-md-12.col-xs-12
+                        ul
+                            li One Direction
+                            li ONPE
+                            li Pablo Escobar
+                            li Pensión 65
+                            li PNP
+                            li Precio del dólar
+                            +universidad
+                            li Premier League
+                            +bayern
+                            li Proyecto Conga
+                            li PUCP
+                            li Reald Madrid
+                            li Redes Sociales
+                            li Reniec
+                            li Robert Pattinson
+                            
+                    .col-lg-2.col-md-12.col-xs-12
+                        ul
+                            +a
+                            li Universidad César Vallejo
+                            +bayern
+                            li Universidad San Martín 
+                            li Barcelona
+                            li Batman
+                            +bayern
