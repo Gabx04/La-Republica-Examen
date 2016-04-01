@@ -1,24 +1,48 @@
 *{
 	box-sizing: border-box;
 }
-#blog{
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 740px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: 980px;
+	
+  }
+}
+@media (min-width: 1100px) {
+  .container {
+    width: 980px;
+  }
+}
+#blog,#columnistas{
 	.row{
-		&:nth-child(2){
-			text-align: center;
-		}
+		text-align: center;
 	}
 	h2{
 	font-family: 'PT Sans', sans-serif;
     font-weight: bold;
     font-size: 48px;
+    text-align: left
 	}
-	h3{
+	.descrip{
     font-family: 'Oswald', sans-serif;
-    font-size: 15px;
-    color: #768596;	
+    font-size: 17px;
+    color: #768596;
+    margin: 35px 0px 10px;
+    text-align: left;	
     	i{
     	color: #BA1414;
-	    font-size: 20px;
+	    font-size: 25px;
 	    margin-left: 5px;
 	    }
 	}
@@ -26,8 +50,9 @@
 		border: 2px solid #E2E2E2;
 	    padding: 1%;
 	    display: inline-block;
-	    margin: 20px 6px;
-	    width: 300px;
+	    margin: 10px 6px;
+	    width: 290px;
+	    vertical-align: top;
 		.title{
 			text-align: center;
 	    	height: 90px;
@@ -44,9 +69,10 @@
 	 }	
 	.blogger{
 		background-color: #E2E6E9;
-	    padding: 15px 10px;
-	    margin: 7px;
+	    padding: 15px;
+	    height: 90px;
 	    text-align: left;
+	    margin-top: 3px;
 		.autor{
 			border: 2px solid white;
 		    display: inline-block;
@@ -55,15 +81,22 @@
 		}
 		.libros{
 			display: inline-block;
+			width: 60%;
 			h3{
 				margin: 0;
 				color:black;
+				font-size: 15px;
 			}
 			h4{
 				color:#667885;
 				font-family: 'PT Sans', sans-serif;
 				font-weight: bolder;
+				font-size: 1em;
 			}
 		}
 	}
+}
+.parche{
+	display:inline-block;
+	margin: 3px 0;
 }

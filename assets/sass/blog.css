@@ -1,54 +1,81 @@
 * {
   box-sizing: border-box; }
 
-#blog .row:nth-child(2) {
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 740px; } }
+@media (min-width: 960px) {
+  .container {
+    width: 980px; } }
+@media (min-width: 1100px) {
+  .container {
+    width: 980px; } }
+#blog .row, #columnistas .row {
   text-align: center; }
-#blog h2 {
+#blog h2, #columnistas h2 {
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
-  font-size: 48px; }
-#blog h3 {
+  font-size: 48px;
+  text-align: left; }
+#blog .descrip, #columnistas .descrip {
   font-family: 'Oswald', sans-serif;
-  font-size: 15px;
-  color: #768596; }
-  #blog h3 i {
+  font-size: 17px;
+  color: #768596;
+  margin: 35px 0px 10px;
+  text-align: left; }
+  #blog .descrip i, #columnistas .descrip i {
     color: #BA1414;
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 5px; }
-#blog .post {
+#blog .post, #columnistas .post {
   border: 2px solid #E2E2E2;
   padding: 1%;
   display: inline-block;
-  margin: 20px 6px;
-  width: 300px; }
-  #blog .post .title {
+  margin: 10px 6px;
+  width: 290px;
+  vertical-align: top; }
+  #blog .post .title, #columnistas .post .title {
     text-align: center;
     height: 90px;
     margin-top: 30px; }
-    #blog .post .title h4 {
+    #blog .post .title h4, #columnistas .post .title h4 {
       font-family: 'PT Sans', sans-serif;
       font-weight: 600;
       font-size: 1.3em; }
-    #blog .post .title h6 {
+    #blog .post .title h6, #columnistas .post .title h6 {
       font-size: 0.8em; }
-#blog .blogger {
+#blog .blogger, #columnistas .blogger {
   background-color: #E2E6E9;
-  padding: 15px 10px;
-  margin: 7px;
-  text-align: left; }
-  #blog .blogger .autor {
+  padding: 15px;
+  height: 90px;
+  text-align: left;
+  margin-top: 3px; }
+  #blog .blogger .autor, #columnistas .blogger .autor {
     border: 2px solid white;
     display: inline-block;
     vertical-align: top;
     margin-right: 10px; }
-  #blog .blogger .libros {
-    display: inline-block; }
-    #blog .blogger .libros h3 {
+  #blog .blogger .libros, #columnistas .blogger .libros {
+    display: inline-block;
+    width: 60%; }
+    #blog .blogger .libros h3, #columnistas .blogger .libros h3 {
       margin: 0;
-      color: black; }
-    #blog .blogger .libros h4 {
+      color: black;
+      font-size: 15px; }
+    #blog .blogger .libros h4, #columnistas .blogger .libros h4 {
       color: #667885;
       font-family: 'PT Sans', sans-serif;
-      font-weight: bolder; }
+      font-weight: bolder;
+      font-size: 1em; }
+
+.parche {
+  display: inline-block;
+  margin: 3px 0; }
 
 /*# sourceMappingURL=blog.css.map */

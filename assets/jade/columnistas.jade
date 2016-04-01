@@ -1,0 +1,122 @@
+doctype html
+html(lang='es-PE')
+    head
+        meta(charset='UTF-8')
+        title columnista
+        link(href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")    
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+        link(rel='stylesheet', type='text/css', href='assets/sass/blog.css')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700' rel='stylesheet' type='text/css')    
+        script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+        script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+        script(type='text/javascript', src='js/bootstrap.min.js')
+        script(type='text/javascript', src='js/slick.min.js')
+        script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+        script(type='text/javascript', src='js/modernizr.custom.68172.js')
+        script(type='text/javascript', src='js/respond.js')
+    body
+        include _mixins
+        section#columnistas
+            div.container
+                div.row
+                    +title("Columnistas","LO ÚLTIMO EN COLUMNISTAS")
+                div.row
+                    +cajapost("El gol de la muerte", "assets/image/img_author_columnista.jpg", "Augusto Álvarez Rodrich", "Claro y directo")
+                    +cajapost("Dios ha muerto... tengo las manos cubiertas de sangre", "assets/image/blog_avatar_02.jpg","Mirko Lauer", "Observador")
+                    +cajapost("¿Cuál es tu queso favorito?","assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio" )
+                div.row
+                    +cajapost("El gol de la muerte", "assets/image/blog_avatar_01.jpg", "Francisco Durand", "Tiro al blanco")
+                    +cajapost("Dios ha muerto... tengo las manos cubiertas de sangre", "assets/image/blog_avatar_02.jpg", "Humberto Campodónico", "Cristal de Mira")
+                    +cajapost("¿Cuál es tu queso favorito?", "assets/image/blog_avatar_03.jpg", "Javier Ágreda", "Jaque Perpetuo" )
+                div.row
+                    +cajapost("El gol de la muerte", "assets/image/img_author_columnista.jpg", "Augusto Álvarez Rodrich", "Claro y directo")
+                    +cajapost("Dios ha muerto... tengo las manos cubiertas de sangre", "assets/image/blog_avatar_02.jpg","Mirko Lauer", "Observador")
+                    +cajapost("¿Cuál es tu queso favorito?","assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio" )
+                div.row
+                    +cajapost("El gol de la muerte", "assets/image/blog_avatar_01.jpg", "Francisco Durand", "Tiro al blanco")
+                    +cajapost("Dios ha muerto... tengo las manos cubiertas de sangre", "assets/image/blog_avatar_02.jpg", "Humberto Campodónico", "Cristal de Mira")
+                    +cajapost("¿Cuál es tu queso favorito?", "assets/image/blog_avatar_03.jpg", "Javier Ágreda", "Jaque Perpetuo" )
+                        
+                   
+                                     
+                div.row
+                    a.btn.btn-default(href="#" role="button") TODAS LAS COLUMNAS
+                div.row
+                    h3.descrip TODOS LOS COLUMNISTAS
+                        i.fa.fa-angle-double-down
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                div.row
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")
+                    +blogger("assets/image/blog_avatar_03.jpg" ,"Aldo Miyashiro", "Chino de mi barrio")                                                           
+                        
+
