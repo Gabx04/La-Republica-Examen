@@ -1,0 +1,58 @@
+doctype html
+html(lang='es-PE')
+    head
+        meta(charset='UTF-8')
+        title Blog
+        link(href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")    
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+        link(rel='stylesheet', type='text/css', href='assets/sass/blog.css')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700' rel='stylesheet' type='text/css')    
+        script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+        script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+        script(type='text/javascript', src='js/bootstrap.min.js')
+        script(type='text/javascript', src='js/slick.min.js')
+        script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+        script(type='text/javascript', src='js/modernizr.custom.68172.js')
+        script(type='text/javascript', src='js/respond.js')
+    body
+        -var gol= "El gol de la muerte"
+        -var dios= "Dios ha muerto... tengo las manos cubiertas de sangre"
+        -var queso= "¿Cuál es tu queso favorito?"
+        -var post1= "LIBROS"
+        -var post2= "Ya lo pasado, PASADO"
+        -var post3= "Décimas Cosas"
+        -var post4= "Y tú... ¿Ya hiciste click?"
+        -var post5= "Educando con Amor Firme"
+        -var post6= "Moda Ente Tendente"
+        mixin cajapost(titulo, src, post)
+            div.post
+                div.title
+                    h6 Lunes, 14 de julio de 2015
+                    h4= titulo     
+                div.blogger
+                    div.autor
+                        img(src= src)
+                    div.libros
+                        h3 BLOG
+                        h4= post
+
+        section#blog
+            div.container
+                div.row
+                    h2 Blogs
+                    h3 LO ÚLTIMO EN BLOGS
+                        i.fa.fa-angle-double-down
+                div.row
+                    +cajapost("El gol de la muerte", "assets/image/blog_avatar_01.jpg", "LIBROS")
+                    +cajapost("Dios ha muerto... tengo las manos cubiertas de sangre", "assets/image/blog_avatar_02.jpg", "Ya lo pasado, PASADO")
+                    +cajapost("¿Cuál es tu queso favorito?","assets/image/blog_avatar_03.jpg" ,"Décimas Cosas" )
+
+
+                    
+                               
+                     
