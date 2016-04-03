@@ -16,8 +16,8 @@
 @media (min-width: 1100px) {
   .container {
     width: 980px; } }
-#blog .row, #columnistas .row {
-  text-align: center; }
+#blog a, #columnistas a {
+  text-decoration: none; }
 #blog h2, #columnistas h2 {
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
@@ -35,47 +35,82 @@
     margin-left: 5px; }
 #blog .post, #columnistas .post {
   border: 2px solid #E2E2E2;
-  padding: 1%;
-  display: inline-block;
-  margin: 10px 6px;
-  width: 290px;
-  vertical-align: top; }
-  #blog .post .title, #columnistas .post .title {
-    text-align: center;
-    height: 90px;
-    margin-top: 30px; }
-    #blog .post .title h4, #columnistas .post .title h4 {
-      font-family: 'PT Sans', sans-serif;
-      font-weight: 600;
-      font-size: 1.3em; }
-    #blog .post .title h6, #columnistas .post .title h6 {
-      font-size: 0.8em; }
-#blog .blogger, #columnistas .blogger {
-  background-color: #E2E6E9;
-  padding: 15px;
+  padding: 5%;
+  margin-bottom: 20px;
+  width: 100%; }
+  #blog .post:hover, #columnistas .post:hover {
+    border: 5px solid #BA1414; }
+#blog .title, #columnistas .title {
+  text-align: center;
   height: 90px;
+  margin-top: 30px; }
+  #blog .title h4, #columnistas .title h4 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: black; }
+    #blog .title h4:hover, #columnistas .title h4:hover {
+      font-size: 1.6em; }
+  #blog .title h6, #columnistas .title h6 {
+    font-size: 0.8em; }
+
+.blogger {
+  background-color: #E2E6E9;
+  padding: 12px;
+  height: 100%;
   text-align: left;
   margin-top: 3px; }
-  #blog .blogger .autor, #columnistas .blogger .autor {
+  .blogger .autor {
     border: 2px solid white;
     display: inline-block;
     vertical-align: top;
-    margin-right: 10px; }
-  #blog .blogger .libros, #columnistas .blogger .libros {
+    margin-right: 5px; }
+  .blogger .libros {
     display: inline-block;
     width: 60%; }
-    #blog .blogger .libros h3, #columnistas .blogger .libros h3 {
+    .blogger .libros h3 {
       margin: 0;
       color: black;
-      font-size: 15px; }
-    #blog .blogger .libros h4, #columnistas .blogger .libros h4 {
+      font-size: 13px;
+      font-weight: lighter;
+      font-family: 'Oswald', sans-serif; }
+    .blogger .libros h4 {
       color: #667885;
       font-family: 'PT Sans', sans-serif;
       font-weight: bolder;
-      font-size: 1em; }
+      font-size: 1em;
+      margin-bottom: 0; }
+      .blogger .libros h4:hover {
+        font-size: 1.3em; }
 
-.parche {
-  display: inline-block;
-  margin: 3px 0; }
+#columnistas .col-md-3 {
+  padding: 3px; }
+#columnistas .parche {
+  padding: 15px;
+  height: 95px; }
+  #columnistas .parche:hover {
+    background-color: white;
+    border: 2px solid #E2E6E9;
+    height: 110px; }
+#columnistas .boton {
+  text-align: center; }
+  #columnistas .boton a {
+    background-color: #BA1414;
+    color: white;
+    margin: autor; }
+#columnistas .navsection {
+  BACKGROUND-COLOR: #CB1B01;
+  PADDING: 15PX;
+  TEXT-ALIGN: CENTER;
+  margin: 15px 0 12px; }
+  #columnistas .navsection a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 200px; }
+    #columnistas .navsection a:hover {
+      background-color: #D90000; }
+    #columnistas .navsection a:first-child {
+      background-color: #811101; }
 
 /*# sourceMappingURL=blog.css.map */

@@ -25,8 +25,8 @@
   }
 }
 #blog,#columnistas{
-	.row{
-		text-align: center;
+	a{
+		text-decoration: none;
 	}
 	h2{
 	font-family: 'PT Sans', sans-serif;
@@ -47,20 +47,26 @@
 	    }
 	}
 	.post{
+		&:hover{
+			border: 5px solid #BA1414; 
+		}
 		border: 2px solid #E2E2E2;
-	    padding: 1%;
-	    display: inline-block;
-	    margin: 10px 6px;
-	    width: 290px;
-	    vertical-align: top;
+    	padding: 5%;
+	    margin-bottom: 20px;
+	    width: 100%;
+  	}
 		.title{
 			text-align: center;
 	    	height: 90px;
 	    	margin-top: 30px;
 	    	h4{
+	    		&:hover{
+					font-size: 1.6em;
+				}
 	    		font-family: 'PT Sans', sans-serif;
 			    font-weight: 600;
 			    font-size: 1.3em;
+			    color:black;
 	    	}
 	    	h6{
 	    		font-size: 0.8em;
@@ -69,15 +75,15 @@
 	 }	
 	.blogger{
 		background-color: #E2E6E9;
-	    padding: 15px;
-	    height: 90px;
+	    padding: 12px;
+	    height: 100%;
 	    text-align: left;
 	    margin-top: 3px;
 		.autor{
 			border: 2px solid white;
 		    display: inline-block;
 		    vertical-align: top;
-		    margin-right: 10px;
+		    margin-right:5px;
 		}
 		.libros{
 			display: inline-block;
@@ -85,18 +91,59 @@
 			h3{
 				margin: 0;
 				color:black;
-				font-size: 15px;
+				font-size: 13px;
+				font-weight: lighter;
+				font-family: 'Oswald', sans-serif;
 			}
 			h4{
+				&:hover{
+					font-size: 1.3em;
+				}
 				color:#667885;
 				font-family: 'PT Sans', sans-serif;
 				font-weight: bolder;
 				font-size: 1em;
+				margin-bottom: 0;
 			}
 		}
 	}
-}
-.parche{
-	display:inline-block;
-	margin: 3px 0;
-}
+#columnistas{
+	.col-md-3{
+		padding:3px;
+	}	
+	.parche{
+		&:hover{
+			background-color: white;
+			border:2px solid #E2E6E9;
+			height: 110px;
+		}
+	padding: 15px;
+    height: 95px;
+	}
+	.boton{
+		text-align: center;
+		a{ 
+		background-color:#BA1414;
+		color:white;
+		margin: autor;
+		}
+ 	}
+ 	.navsection{
+ 		BACKGROUND-COLOR: #CB1B01;
+	    PADDING: 15PX;
+	    TEXT-ALIGN: CENTER;
+	    margin: 15px 0 12px;
+	    a{
+	    	color:white;
+	    	text-decoration: none;
+	    	margin: 0 15px;
+	    	border-radius: 200px;
+	    	&:hover{
+	    		background-color:#D90000;
+	    	}
+	    	&:first-child{
+	    		background-color:#811101;
+	    	}
+	    }
+ 	}
+ }

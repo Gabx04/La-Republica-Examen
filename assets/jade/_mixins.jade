@@ -201,20 +201,25 @@ mixin cajapost(titulo, src, name, post)
 	div.post
 		div.title
 			h6 Lunes, 14 de julio de 2015
-			h4= titulo     
+			a(href="#")
+				h4= titulo     
 		div.blogger
 			div.autor
-				img(src= src)
+				a(href="#")
+					img(src= src)
 			div.libros
 				h3= name
-				h4= post
+				a(href="#")
+					h4= post
 mixin blogger(src, name, post)
 	div.blogger.parche
 		div.autor
-			img(src= src)
+			a(href="#")
+				img(src= src)
 		div.libros
 			h3= name
-			h4= post              
+			a(href="#")
+				h4= post              
 mixin title(name, descripcion)
 	h2= name
 	h3.descrip= descripcion
