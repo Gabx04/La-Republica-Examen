@@ -3,6 +3,7 @@ html(lang='es')
     head
         meta(charset='UTF-8')
         title Home
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700', rel='stylesheet', type='text/css')
         link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
         link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
         link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
@@ -19,6 +20,7 @@ html(lang='es')
                 .row
                     .col-xs-12
                         p.titular-principal guerra en la municipalidad de lima metropolitana
+                        +redes
                 .row
                     .col-xs-12.col-md-6
                         a(href="#").portada-principal
@@ -33,13 +35,96 @@ html(lang='es')
                 .row
                     .col-xs-12
                         .columnistas
-                            h2 
+                            h2.linea-fondo
                                 a columnistas
                             .slider.slick-slider
                                 .slick-list
                                     .slick-track
                                         .slick-slide
-                                            +columnistas("assets/image/img-columnistas.jpg", "Mario Vargas Llosa",  "Megarrenuncias apulpinantes")
+                                            +mvll
+                                            +alvarezrodrich
+                                            +mvll
+                                            +alvarezrodrich
+                                            +mvll
+                                            +columnistax
+                                        .slick-slide
+                                            +mvll
+                                            +alvarezrodrich
+                                            +mvll
+                                            +alvarezrodrich
+                                            +mvll
+                                            +columnistax
+                                        .slick-slide
+                                            +mvll
+                                            +alvarezrodrich
+                                            +mvll
+                                            +alvarezrodrich
+                                            +mvll
+                                            +columnistax                             
+                                ul.slick-dots
+                                    li
+                                        button
+                                    li
+                                        button        
+        section#avances
+            .container
+                .row
+                    .hidden-xs.col-md-4
+                        +avances("Mercado de Pases 2015", "Mercado de Pases 2015: altas, bajas y rumores de los equipos peraunos", "avance uno")
+                        +avances("Régimen laboral juvenil", "Ollanta Humala: los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes |VIDEO", "avance dos")
+                    .hidden-xs.col-md-4
+                        +avances("Champions League", "¿Podrá el Real Madrid conseguir la Undécima?", "avance tres")
+                        +avances("Super Bowl", "El Super Bowl XLIX: New England Patriots se consagró campeón la NFL al ganar 28-24 a Seahawks |VIDEO", "avance cuatro")
+        
+        section#ultimasnoticias
+            .container
+                .row
+                    .col-xs-12.col-md-8
+                        h3 ÚLTIMAS NOTICIAS
+                            img(src="assets/image/double-arrow-bottom.png", alt="arrow")
+                        .latest-news
+                            +emma
+                            +roque
+                            +notayt
+                            +realmadrid
+                            +emma
+                            +roque
+                            +notayt
+                            +realmadrid
+                            +emma
+                            +roque
+                            +notayt
+                            +realmadrid
+                            +roque
+                            +notayt
+                            +realmadrid
+                            +emma
+                            +roque
+                            +notayt
+                            +realmadrid
+                            +emma
+                            +roque
+                            +notayt
+                            +realmadrid
+                            +roque
+                            +notayt
+                            +realmadrid
+                            +emma
+                            +roque
+                            +notayt
+                            +realmadrid
+                            +emma
+                            +roque
+                            +notayt
+                            +realmadrid
+                            +realmadrid
+
+
+
+
+
+
+
                                                 
                                                     
                     
@@ -47,8 +132,9 @@ html(lang='es')
 
         script(src='http://code.jquery.com/jquery-1.11.2.min.js')
         script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
-        script(type='text/javascript', src='js/bootstrap.min.js')
         script(type='text/javascript', src='js/slick.min.js')
+        script(type='text/javascript', src='js/bootstrap.min.js')
         script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
         script(type='text/javascript', src='js/modernizr.custom.68172.js')
         script(type='text/javascript', src='js/respond.js')
+        script(type='text/javascript', src='js/main.js')

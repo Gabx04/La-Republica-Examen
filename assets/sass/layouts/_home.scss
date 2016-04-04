@@ -1,0 +1,77 @@
+#portada {
+	.titular-principal {
+		font-family: $OpenSans;
+		font-size: 55px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 1;
+		text-align: center;
+		letter-spacing: -1px;
+		margin: 20px 0;
+	}
+	.portada-principal {
+		background-image: url(../image/img_grid_principal.jpg);
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 500px;
+		width: 100%;
+		display: block;
+		position: relative;
+		padding: 0 15px;
+		p {
+			@include titulares(32px);
+			position: absolute;
+			bottom: 10px;
+		}
+	}
+	.portada-secundaria {
+		background-image: url(../image/img_grid_secundario.jpg);
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 240px;
+		width: 100%;
+		display: block;
+		position: relative;
+		padding: 0 15px;
+		p {
+			@include titulares(24px);
+			position: absolute;
+			bottom: 10px;
+		}
+		&.uno {
+			background-image: url(../image/img_grid_secundario.jpg);
+			margin-bottom: 10px;
+		}
+		&.dos {
+			background-image: url(../image/post-img-sample.jpg);
+			margin-top: 10px;
+		}
+	}
+}
+
+
+
+#share {
+	position: relative;
+	z-index: 1000;
+	height: 40px;
+	li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: absolute;
+		top: 0;
+		a {
+			height: 40px;
+			display: inline-block;
+			#fb {
+				left: 0;
+				width: 40px;
+				background: url("../../assets/image/social_sprite.png") 0 0;
+			}
+
+		}
+	}
+}

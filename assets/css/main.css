@@ -1,0 +1,88 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 740px; } }
+@media (min-width: 960px) {
+  .container {
+    width: 980px; } }
+@media (min-width: 1100px) {
+  .container {
+    width: 980px; } }
+#portada .titular-principal {
+  font-family: "Open Sans", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -1px;
+  margin: 20px 0; }
+#portada .portada-principal {
+  background-image: url(../image/img_grid_principal.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  display: block;
+  position: relative;
+  padding: 0 15px; }
+  #portada .portada-principal p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    position: absolute;
+    bottom: 10px; }
+#portada .portada-secundaria {
+  background-image: url(../image/img_grid_secundario.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 240px;
+  width: 100%;
+  display: block;
+  position: relative;
+  padding: 0 15px; }
+  #portada .portada-secundaria p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    position: absolute;
+    bottom: 10px; }
+  #portada .portada-secundaria.uno {
+    background-image: url(../image/img_grid_secundario.jpg);
+    margin-bottom: 10px; }
+  #portada .portada-secundaria.dos {
+    background-image: url(../image/post-img-sample.jpg);
+    margin-top: 10px; }
+
+#share {
+  position: relative;
+  z-index: 1000;
+  height: 40px; }
+  #share li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0; }
+    #share li a {
+      height: 40px;
+      display: inline-block; }
+      #share li a #fb {
+        left: 0;
+        width: 40px;
+        background: url("../../assets/image/social_sprite.png") 0 0; }
+
+/*# sourceMappingURL=main.css.map */

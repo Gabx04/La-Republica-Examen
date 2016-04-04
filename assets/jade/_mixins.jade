@@ -5,8 +5,45 @@ mixin redsocial(alt)
 mixin columnistas(src, nombre, titular)
 	.node
 		.columnista.text-center
-			.foto-perfil
+			a(href="#").foto-perfil
 				img(src= src, alt= nombre)
-			a.nombre nombre
+			a.nombre= nombre
 			p.titular= titular
+mixin mvll
+	+columnistas("assets/image/img-columnistas.jpg", "Mario Vargas Llosa", "Megarrenuncias apulpinantes")
+mixin alvarezrodrich
+	+columnistas("assets/image/img_blogueros.jpg", "Augusto Álvarez Rodrich", "Respuesta a una derrota estridente")
+mixin columnistax
+	+columnistas("assets/image/img_blogueros.jpg", "Mario Vargas Llosa", "Megarrenuncias apulpinantes")
+mixin avances(tema, titular, claseavance)
+	div(class= claseavance)
+		p.tema-avance= tema
+		.noticia
+			p.titular-avance= titular
+		p.todosobre Todo sobre
+			span #{tema}
+mixin reciente(tituloreciente, src, contenidoreciente)
+	.noticiareciente
+		p Hace 1 hora 12 mins
+		p.titulo-reciente= tituloreciente
+		.imagen-noticia
+			img(src= src, alt="foto noticia")
+		.contenido
+			p= contenidoreciente
+mixin emma()
+	+reciente(tituloemma, "assets/image/img_news.jpg", contenidoemma)
+mixin roque()
+	+reciente(tituloroque, "assets/image/un-image--thumb-01.jpg", contenidoroque)
+mixin notayt()
+	+reciente(tituloyt, "assets/image/img_sd_mascota.jpg", contenidoemma)
+mixin realmadrid()
+	+reciente(titulorealmadrid, "assets/image/img_video_destacado.jpg", contenidorealmadrid)
 
+mixin redes()
+	ul#share
+		li#fb
+			a(href="#")
+		li#tw
+			a(href="#")
+		li#gplus
+			a(href="#")
