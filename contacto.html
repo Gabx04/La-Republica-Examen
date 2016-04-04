@@ -2,16 +2,69 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="assets/css/dist/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/dist/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   </head>
   <body>
+    <div id="contacto">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-xs-12">
+            <h1>Contáctese con nosotros</h1>
+            <p class="texto">Llena este formulario si necesita enviarnos alguna información acercadel contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para el sitio. Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.</p>
+            <div class="borde">
+              <form id="formulariousuario">
+                    <input type="text" placeholder="Nombres Completos" class="form">
+                    <input type="text" placeholder="Correo electrónico" class="form">
+                    <input type="text" placeholder="Teléfonos" class="form">
+                <label>(Opcional)</label>
+              </form>
+              <h3>Elija un destinatario</h3>
+              <form id="destinatario">
+                    <div class="form-item form-type-radios form-item-cid">
+                      <input type="radio" class="form-radio">
+                      <label class="destinatario1">Sugerencia para el sitio web</label>
+                      <label class="destinatario2">(Ej: funcionamiento y mejoras para el sitio)</label>
+                    </div>
+                    <div class="form-item form-type-radios form-item-cid">
+                      <input type="radio" class="form-radio">
+                      <label class="destinatario1">Dirección periodística</label>
+                      <label class="destinatario2">(Ej: Sugerencia para la nota de prensa)</label>
+                    </div>
+                    <div class="form-item form-type-radios form-item-cid">
+                      <input type="radio" class="form-radio">
+                      <label class="destinatario1">Dirección comercial</label>
+                      <label class="destinatario2">(Ej: Pubblicidad en diarios o sitios web)</label>
+                    </div>
+                    <div class="form-item form-type-radios form-item-cid">
+                      <input type="radio" class="form-radio">
+                      <label class="destinatario1">Cartas al director</label>
+                      <label class="destinatario2">(Ej:denuncias, comentarios e impresiones)</label>
+                    </div>
+                    <div class="form-item form-type-radios form-item-cid">
+                      <input type="radio" class="form-radio">
+                      <label class="destinatario1">Promociones y productos del diario</label>
+                      <label class="destinatario2">(Ej: Promociones, tablet, etc)</label>
+                    </div>
+                    <div class="form-item form-type-radios form-item-cid">
+                      <input type="radio" class="form-radio">
+                      <label class="destinatario1">Archivo periodístico</label>
+                      <label class="destinatario2">(Ej: Ediciones impresas/fotos)</label>
+                    </div>
+                <textarea type="text" rows="5" placeholder="Mensaje" class="formulario"></textarea>
+                <button type="submit" class="btn-contacto">ENVIAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>

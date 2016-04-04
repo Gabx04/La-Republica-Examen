@@ -10,7 +10,7 @@
 		margin: 20px 0;
 	}
 	.portada-principal {
-		background-image: url(../image/img_grid_principal.jpg);
+		background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_grid_principal.jpg);
 		background-position: top;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -20,15 +20,12 @@
 		position: relative;
 		padding: 0 15px;
 		p {
-			@include titulares(32px);
-			position: absolute;
-			bottom: 10px;
+			@include titulares(28px);
 		}
 	}
 	.portada-secundaria {
-		background-image: url(../image/img_grid_secundario.jpg);
-		background-position: top;
 		background-size: cover;
+		background-position: top;
 		background-repeat: no-repeat;
 		height: 240px;
 		width: 100%;
@@ -36,22 +33,72 @@
 		position: relative;
 		padding: 0 15px;
 		p {
-			@include titulares(24px);
-			position: absolute;
-			bottom: 10px;
+			@include titulares(20px);
 		}
 		&.uno {
-			background-image: url(../image/img_grid_secundario.jpg);
+			background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_grid_secundario.jpg);
 			margin-bottom: 10px;
 		}
 		&.dos {
-			background-image: url(../image/post-img-sample.jpg);
+			background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../image/post-img-sample.jpg);
 			margin-top: 10px;
 		}
 	}
 }
+#columnistas {
+	h2 {
+		@extend %titulosseccion;
+	}
+}
+.slider {
+	width: 100%;
+	margin: auto;
+	background-color: #F2F2F2;
+	padding: 20px;
+	.node {
+		display: inline-block;
+	}
+	.columnista {
+		width: 140px;
+		padding: 15px 10px;
+		.foto-perfil {
+			width: 80px;
+			height: auto;
+			padding: 5px;
+			background-color: white;
+			box-shadow: 0 0 2px gray;
+			display: block;
+			margin: 10px auto;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.nombre {
+			text-align: center;
+			text-decoration: none;
+			font-family: $OpenSans;
+			font-size: 12px;
+			font-weight: 700;
+			color: gray;
+		}
+		.titular {
+			text-align: center;
+			font-family: $OpenSans;
+			font-size: 14px;
+			font-weight: 700;
+			color: #545454;
+		}
 
-
+	}
+}
+.controllers {
+	i {
+		font-size: 12px;
+		color: #B20000;
+		display: inline-block;
+	}
+}
 
 #share {
 	position: relative;

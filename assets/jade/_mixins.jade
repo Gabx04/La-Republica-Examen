@@ -47,3 +47,11 @@ mixin redes()
 			a(href="#")
 		li#gplus
 			a(href="#")
+mixin formulario(placeholder)
+	input(type="text", class="form", placeholder=placeholder)
+
+mixin opciones(textouno, textodos)
+	.form-item.form-type-radios.form-item-cid
+		input(class="form-radio", type="radio")
+		label.destinatario1= textouno
+		label.destinatario2= textodos

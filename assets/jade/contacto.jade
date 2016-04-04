@@ -2,15 +2,45 @@ doctype html
 html(lang='es')
     head
         meta(charset='UTF-8')
-        title Home
+        title Contacto
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700', rel='stylesheet', type='text/css')
         link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
         link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
-        link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
-        link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+        link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
         link(rel='stylesheet', type='text/css', href='assets/css/main.css')
     body
+        include ./_variables
+        include ./_extends
+        include ./_mixins
+
+        #contacto
+            .container
+                .row 
+                    .col-xs-12
+                        h1 Contáctese con nosotros
+                        p.texto Llena este formulario si necesita enviarnos alguna información acercadel contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para el sitio. Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.
+                        .borde
+
+                            form#formulariousuario
+                                +formulario("Nombres Completos")
+                                +formulario("Correo electrónico")
+                                +formulario("Teléfonos")
+                                label (Opcional)
+
+                            h3 Elija un destinatario
+
+                            form#destinatario
+                                +opciones("Sugerencia para el sitio web", "(Ej: funcionamiento y mejoras para el sitio)")
+                                +opciones("Dirección periodística", "(Ej: Sugerencia para la nota de prensa)")
+                                +opciones("Dirección comercial", "(Ej: Pubblicidad en diarios o sitios web)")
+                                +opciones("Cartas al director", "(Ej:denuncias, comentarios e impresiones)")
+                                +opciones("Promociones y productos del diario", "(Ej: Promociones, tablet, etc)")
+                                +opciones("Archivo periodístico", "(Ej: Ediciones impresas/fotos)")                            
+                            
+                                textarea(type="text", class="formulario", rows="5" placeholder="Mensaje")
+                                button(type="submit", class="btn-contacto") ENVIAR
 
         script(src='http://code.jquery.com/jquery-1.11.2.min.js')
         script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
