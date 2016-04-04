@@ -20,6 +20,7 @@ html(lang='es-PE')
         script(type='text/javascript', src='js/respond.js')
     body
         include _mixins
+        include header
         section#blog
             div.container
                 div.row
@@ -73,6 +74,9 @@ html(lang='es-PE')
                         +cajapost("Dios ha muerto... tengo las manos cubiertas de sangre", "assets/image/blog_avatar_02.jpg", "BLOG", "Ya lo pasado, PASADO")
                     div.col-sm-4.col-md-4    
                         +cajapost("¿Cuál es tu queso favorito?","assets/image/blog_avatar_03.jpg" , "BLOG","Décimas Cosas" ) 
+
+
+
                 
 
 
@@ -80,3 +84,4 @@ html(lang='es-PE')
                     
                                
                      
+        include footer             
