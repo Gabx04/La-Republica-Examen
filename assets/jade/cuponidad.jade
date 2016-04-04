@@ -9,25 +9,31 @@ html(lang='es')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
-        link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/footer.css')
+        link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+        mixin juan
+            .juan
+                img(src="assets/image/img_aweita.jpg")
+                h4 Juan Ramón Riquelme el adíos al 'Último 10' de Argentina
+        mixin lewis
+            .lewis
+                img(src="assets/image/img_aweita.jpg")
+                h4 Lewi Caroll:un día como hoy nació el autor de 'Alicia en el
     body
-        include _variables
-        include _extends
-        include _mixins
-        
-        section#portada
+        aside
             .container
-                .row                    
-                    p.titular-principal guerra en la municipalidad de lima metropolitana
                 .row
-                    .col-xs-12.col-md-6
-                        a(href="#").portada-principal
-                            p JNE inpulsará campaña en favor de la aprobación de la Reforma Electoral
-                    .col-xs-12.col-md-6
-                        a(href="") .portada-secundaria
-                            p Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones |Fotos
-
-
+                    img(src="assets/image/banner-aside-home.jpg")
+                .row
+                    .aweita
+                        img(src="assets/image/logo_aweita.jpg")
+                        +juan
+                        +lewis
+                        +juan
+                        +lewis
+                        .plus
+                            p Más en 
+                                a(href="#") Aweita.pe
         script(src='http://code.jquery.com/jquery-1.11.2.min.js')
         script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
         script(type='text/javascript', src='js/bootstrap.min.js')

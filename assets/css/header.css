@@ -1,0 +1,162 @@
+header {
+  padding-top: 10px;
+  background-color: #F2F2F2;
+  border-bottom: 1px solid #BDBDBD; }
+  header img {
+    width: 100%;
+    margin-bottom: 10px; }
+  header a {
+    font-weight: 700;
+    font-size: 15px; }
+  header .col-lg-6 ul li {
+    display: inline-block; }
+    header .col-lg-6 ul li a {
+      font-size: 13px;
+      color: #848484;
+      text-decoration: none; }
+  header .col-lg-4 ul {
+    margin: 10px 0 10px 0; }
+    header .col-lg-4 ul li:nth-child(1) a {
+      color: white;
+      background: #DF0101;
+      border-radius: 5px;
+      padding: 3px;
+      text-decoration: none; }
+    header .col-lg-4 ul li:nth-child(2) a {
+      color: #2A65A1; }
+    header .col-lg-4 ul li:nth-child(3) a {
+      color: #4BB7D9; }
+    header .col-lg-4 ul li:nth-child(4) a {
+      color: #FF0000; }
+    header .col-lg-4 ul li:nth-child(5) a {
+      color: #FFBF00; }
+    header .col-lg-4 ul li:nth-child(6) a {
+      color: #FD9328; }
+  header form {
+    display: inline-block;
+    padding: 10px;
+    border-left: 1px solid #BDBDBD;
+    border-right: 1px solid #BDBDBD; }
+    header form a {
+      color: #0B3861;
+      font-size: 13px;
+      text-decoration: none; }
+    header form .fa {
+      margin: 0 5px 0 5px;
+      transform: rotate(90deg); }
+
+.republica {
+  /*.special{
+  	padding: 15px 10px 10px; 
+  	border-bottom: 2px solid $color-azul-oscuro;
+  	h4{
+  		font-size: 12px;
+  		font-weight: 700;
+  	}
+  	span{
+  		background: $color-azul-oscuro;
+  		color: white;
+  		font-weight: 800;
+  		padding: 0px 5px;
+  		font-size: 13px;
+  		position: absolute;
+  		top: -7px;
+  		left: 60px;
+  	}
+  }*/ }
+  .republica .pe {
+    margin-top: 35px; }
+  .republica .edit, .republica .sunday, .republica .special {
+    border: 1px solid #BDBDBD;
+    position: relative;
+    margin: 20px 0 20px 0; }
+  .republica .sunday {
+    padding: 15px 10px 10px;
+    border-bottom: 3px solid #941010; }
+    .republica .sunday h4 {
+      font-size: 14px;
+      font-weight: bolder; }
+    .republica .sunday span {
+      background-color: #941010;
+      color: white;
+      font-weight: 800;
+      padding: 0px 5px;
+      font-size: 13px;
+      position: absolute;
+      top: -10px;
+      left: 140px; }
+  .republica .edit {
+    background: black;
+    position: relative;
+    padding-left: 18px; }
+    .republica .edit .texto {
+      display: inline-block;
+      position: absolute;
+      left: 2px;
+      top: 5px; }
+    .republica .edit .author {
+      position: absolute;
+      right: -3px;
+      top: -1px; }
+    .republica .edit .cita {
+      width: 100%;
+      padding: 0 66px;
+      display: inline-block;
+      background: white;
+      border-radius: 5px; }
+      .republica .edit .cita h4 {
+        font-weight: 700;
+        font-size: 13px; }
+      .republica .edit .cita p {
+        font-size: 12px;
+        font-style: italic; }
+
+.red img {
+  width: 100%; }
+.red .first-nav {
+  border-radius: 5px;
+  margin: auto; }
+  .red .first-nav li {
+    padding: 0px;
+    margin: auto -3px; }
+    .red .first-nav li a {
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      padding: 12px;
+      background: #941010;
+      color: white;
+      border-left: 1px double #941010;
+      border-right: 1px double #941010; }
+.red .themes {
+  width: 100%;
+  margin: 10px 0;
+  background: #BDBDBD;
+  border-radius: 5px; }
+  .red .themes span:nth-child(1) {
+    display: inline-block;
+    background: Black;
+    color: white;
+    font-size: 15px;
+    font-family: "Oswald";
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+  .red .themes .day {
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-block; }
+    .red .themes .day li {
+      display: inline-block; }
+      .red .themes .day li a {
+        text-decoration: none;
+        color: #848484;
+        display: inline-block;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 15px; }
+        .red .themes .day li a .fa-circle {
+          vertical-align: middle;
+          font-size: 5px; }
+
+/*# sourceMappingURL=header.css.map */
