@@ -9,7 +9,10 @@
 
 @media (min-width: 768px) {
   .container {
-    width: 740px; } }
+    width: 740px; }
+
+  .post {
+    min-height: initial; } }
 @media (min-width: 960px) {
   .container {
     width: 980px; } }
@@ -112,5 +115,12 @@
       background-color: #D90000; }
     #columnistas .navsection a:first-child {
       background-color: #811101; }
+
+@media (max-width: 960px) {
+  .post {
+    min-height: 290px; } }
+@media (max-width: 600px) {
+  .post {
+    min-height: initial; } }
 
 /*# sourceMappingURL=blog.css.map */

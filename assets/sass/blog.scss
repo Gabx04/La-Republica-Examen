@@ -11,6 +11,9 @@
   .container {
     width: 740px;
   }
+  .post{
+  	min-height: initial;
+  }
 }
 
 @media (min-width: 960px) {
@@ -145,5 +148,16 @@
 	    		background-color:#811101;
 	    	}
 	    }
+ 	}
+ }
+ @media (max-width: 960px){
+ 	.post{
+ 		min-height: 290px;
+ 	}
+ }
+
+ @media (max-width: 600px){
+ 	.post{
+ 		min-height: initial;
  	}
  }
