@@ -9,15 +9,28 @@
     <link rel="stylesheet" type="text/css" href="assets/css/dist/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/cuponidad.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
   <body>
     <aside>
       <div class="container">
-        <div class="row"><img src="assets/image/banner-aside-home.jpg"></div>
-        <div class="row">
-          <div class="aweita"><img src="assets/image/logo_aweita.jpg">
+        <div class="col-md-4 hidden-xs"><img src="assets/image/banner-aside-home.jpg"></div>
+        <div class="col-md-4 hidden-xs">
+          <div class="box"><img src="assets/image/img_sucribe.png">
+            <div class="info"> 
+              <h4><span class="span">Suscribete</span> a nuestro boletín</h4>
+              <form role="form">
+                <div class="form-group">
+                  <input type="letter" class="form-control">
+                </div>
+              </form>
+              <button class="btn btn-default">SUSCRIBE        </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 hidden-xs">
+          <div class="aweita"><img src="assets/image/logo_aweita.jpg" class="logo">
                 <div class="block"><img src="assets/image/img_aweita.jpg">
                   <h4>Juan Ramón Riquelme el adíos al 'Último 10' de Argentina</h4>
                 </div>
@@ -31,17 +44,17 @@
                   <h4>Gameplay de 'Dead kings', el descargable premium de 'Assassin's</h4>
                 </div>
             <div class="plus">
-              <p>Más en <a href="#">Aweita.pe</a></p>
+              <p>Más en <a href="#" class="first">Aweita.pe</a></p>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="col-md-4 col-xs-12">
           <div class="line">
                 <div class="photo">
                   <p>FOTOS DESTACADAS</p>
                 </div>
           </div><img src="assets/image/img_fotodes_prominent.jpg">
-          <h3>Lineas de Nasca: admiten prisión preventiva de 6 meses para activistas de Greenpeace | FOTOS                        </h3>
+          <h4>Lineas de Nasca: admiten prisión preventiva de 6 meses para activistas de Greenpeace | FOTOS                        </h4>
               <div class="block"><img src="assets/image/img_fotodes.jpg">
                 <h4>Uchuraccay: El pueblo que recibe con flores a quienes llegan a pie | FOTOS</h4>
               </div>
@@ -53,27 +66,29 @@
               </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="col-md-4 col-xs-12">
           <div class="line">
                 <div class="photo">
                   <p>ESPECIALES</p>
                 </div>
-            <div class="img"><img src="assets/image/img_especiales_aside.jpg">
+          </div>
+          <div class="images">
+            <div class="img"><img src="assets/image/img_especiales_aside.jpg" class="imge">
               <div class="transparent">
                 <p>Régimen laboral juvenil</p>
               </div>
             </div>
-            <div class="img"><img src="assets/image/img_especiales.jpg">
+            <div class="img"><img src="assets/image/img_especiales.jpg" class="imge">
               <div class="transparent">
                 <p>COP 20</p>
               </div>
             </div>
-            <div class="img"><img src="assets/image/fotogaleria_col03_01.jpg">
+            <div class="img"><img src="assets/image/fotogaleria_col03_01.jpg" class="imge">
               <div class="transparent">
                 <p>Concentración de Medios</p>
               </div>
             </div>
-            <div class="img"><img src="assets/image/img_sd_mascota.jpg">
+            <div class="img"><img src="assets/image/fotogaleria_col03_01.jpg" class="imge">
               <div class="transparent">
                 <p>Especies peruanas en peligro de extinción</p>
               </div>
@@ -81,81 +96,90 @@
           </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="col-md-4 col-xs-12">
           <div class="redline">
-                <div class="redline">
-                  <div class="carlincatura">
-                    <p>Carlincatura del Día</p>
-                  </div>
+                <div class="carlincatura">
+                  <p>Carlincatura del Día</p>
                 </div>
           </div>
           <h3>Carlincaturas 30-01-2015</h3><img src="assets/image/img_carlincatura_sd.jpg"><a href="#">Todas las Carlincaturas</a>
         </div>
         <hr>
-        <div class="row"> 
+        <div class="col-md-4 hidden-xs"> 
           <div class="line">
                 <div class="photo">
                   <p>NUESTROS BLOGUEROS</p>
                 </div>
           </div>
-              <div class="rodrich"><img src="assets/image/img_blogueros.jpg">
-                <p>Augusto Álvarez Rodrich</p>
-                <h4>Charlie Hebdo, historia que no debe repetirse</h4>
+              <div class="col-md-4"><img src="assets/image/img_blogueros.jpg"></div>
+              <div class="col-md-8">
+                <h5>Charlie Hebdo, historia que no debe repetirse</h5>
+                <p class="red">Augusto Álvarez Rodrich</p>
               </div>
-              <div class="rodrich"><img src="assets/image/img_blogueros.jpg">
-                <p>Augusto Álvarez Rodrich</p>
-                <h4>El único pulpín es Humala</h4>
+              <div class="col-md-4"><img src="assets/image/img_blogueros.jpg"></div>
+              <div class="col-md-8">
+                <h5>Charlie Hebdo, historia que no debe repetirse</h5>
+                <p class="red">Augusto Álvarez Rodrich</p>
               </div>
-              <div class="rodrich"><img src="assets/image/img_blogueros.jpg">
-                <p>Augusto Álvarez Rodrich</p>
-                <h4>Dios ha muerto... tengo las manos</h4>
+              <div class="col-md-4"><img src="assets/image/img_blogueros.jpg"></div>
+              <div class="col-md-8">
+                <h5>Charlie Hebdo, historia que no debe repetirse</h5>
+                <p class="red">Augusto Álvarez Rodrich</p>
               </div>
-              <div class="rodrich"><img src="assets/image/img_blogueros.jpg">
-                <p>Augusto Álvarez Rodrich</p>
-                <h4>El único pulpín es Humala</h4>
+              <div class="col-md-4"><img src="assets/image/img_blogueros.jpg"></div>
+              <div class="col-md-8">
+                <h5>Charlie Hebdo, historia que no debe repetirse</h5>
+                <p class="red">Augusto Álvarez Rodrich</p>
               </div>
-              <div class="rodrich"><img src="assets/image/img_blogueros.jpg">
-                <p>Augusto Álvarez Rodrich</p>
-                <h4>Charlie Hebdo, historia que no debe repetirse</h4>
+              <div class="col-md-4"><img src="assets/image/img_blogueros.jpg"></div>
+              <div class="col-md-8">
+                <h5>Charlie Hebdo, historia que no debe repetirse</h5>
+                <p class="red">Augusto Álvarez Rodrich</p>
               </div>
-              <div class="rodrich"><img src="assets/image/img_blogueros.jpg">
-                <p>Augusto Álvarez Rodrich</p>
-                <h4>El único pulpín es Humala</h4>
+              <div class="col-md-4"><img src="assets/image/img_blogueros.jpg"></div>
+              <div class="col-md-8">
+                <h5>Charlie Hebdo, historia que no debe repetirse</h5>
+                <p class="red">Augusto Álvarez Rodrich</p>
               </div>
-              <div class="rodrich"><img src="assets/image/img_blogueros.jpg">
-                <p>Augusto Álvarez Rodrich</p>
-                <h4>Dios ha muerto... tengo las manos</h4>
+              <div class="col-md-4"><img src="assets/image/img_blogueros.jpg"></div>
+              <div class="col-md-8">
+                <h5>Charlie Hebdo, historia que no debe repetirse</h5>
+                <p class="red">Augusto Álvarez Rodrich</p>
               </div>
-              <div class="rodrich"><img src="assets/image/img_blogueros.jpg">
-                <p>Augusto Álvarez Rodrich</p>
-                <h4>El único pulpín es Humala</h4>
+              <div class="col-md-4"><img src="assets/image/img_blogueros.jpg"></div>
+              <div class="col-md-8">
+                <h5>Charlie Hebdo, historia que no debe repetirse</h5>
+                <p class="red">Augusto Álvarez Rodrich</p>
+              </div>
+              <div class="col-md-4"><img src="assets/image/img_blogueros.jpg"></div>
+              <div class="col-md-8">
+                <h5>Charlie Hebdo, historia que no debe repetirse</h5>
+                <p class="red">Augusto Álvarez Rodrich</p>
               </div><a href="#">Todas los blogs</a>
         </div>
         <hr>
-        <div class="row">
+        <div class="col-md-4 hidden-xs">
           <div class="redline">
-                <div class="redline">
-                  <div class="carlincatura">
-                    <p>EDICÍON IMPRESA</p>
-                  </div>
+                <div class="carlincatura">
+                  <p>EDICÍON IMPRESA</p>
                 </div>
             <h3>La República - Lima</h3><img src="assets/image/img_impreso_sd_prominent.jpg">
-                <div class="edicion"><img src="assets/image/img_impreso_sd.jpg">
+                <div class="edicion"><img src="assets/image/img_impreso_sd.jpg" class="news">
                   <h4>Extorsionan a menores en colegios</h4>
                   <p>La República - Norte</p>
                 </div>
-                <div class="edicion"><img src="assets/image/img_impreso_sd.jpg">
+                <div class="edicion"><img src="assets/image/img_impreso_sd.jpg" class="news">
                   <h4>Lluvias en Arequipa inundan casas y causan caos en la calles</h4>
                   <p>La República - Sur</p>
                 </div>
-                <div class="edicion"><img src="assets/image/img_aside_author.jpg">
+                <div class="edicion"><img src="assets/image/img_aside_author.jpg" class="news">
                   <h4>El ojo de Oblitas</h4>
                   <p>Domingo</p>
                 </div>
           </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="col-md-4 hidden-xs">
           <div class="line">
                 <div class="photo">
                   <p>INFOGRAFIAS</p>
@@ -163,7 +187,7 @@
           </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="col-md-4 col-xs-12">
           <div class="box"><img src="assets/image/img_pregunta.png">
             <div class="info"> 
               <h4>La Pregunta de hoy</h4>
@@ -178,10 +202,21 @@
                   <input id="optionsRadios1" type="radio" name="optionsRadios" value="option1" checked="">        No
                 </label>
               </div>
+              <button class="button-default">VOTAR</button><a href="#">Ver resultados</a>
+            </div>
+            <div class="info">
+              <h4>La pregunta de ayer</h4>
+              <p>¿Cree usted que se militarizó la conmemoración del fallo de la Haya de Lima?</p>
+              <div class="progress">
+                <div role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%" class="progress-bar progress-bar-success active">55%</div>
+              </div>
+              <div class="progress">
+                <div role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%" class="progress-bar progress-bar-danger active">25%</div>
+              </div><a href="#">Más fotos</a>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="col-md-4 hidden-xs">
           <div class="aweita"><img src="assets/image/logo_libero.jpg">
                 <div class="block"><img src="assets/image/img_aweita.jpg">
                   <h4>Florentina empató 1-1 en su visita al Genoa con gran actuación de Juan Varga[VIDEO]</h4>
@@ -200,7 +235,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="col-md-4 hidden-xs">
           <div class="aweita"><img src="assets/image/logo_popular.jpg">
                 <div class="block"><img src="assets/image/img_news_grid.jpg">
                   <h4>Joshua Ivanoff está loco por olor de Melissa Loza</h4>
@@ -215,11 +250,11 @@
                   <h4>Philip Seymour Hoffman:Un año sin el premiado actor(VIDEO)</h4>
                 </div>
             <div class="plus">
-              <p>Más en <a href="#">elPopular.pe</a></p>
+              <p>Más en <a href="#">elPopular.pe//</a></p>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="col-md-4 hidden-xs">
           <div class="aweita"><img src="assets/image/logo_wapa.jpg">
                 <div class="block"><img src="assets/image/img_news_grid.jpg">
                   <h4>¿Cómo renovar el guardarropa de los mas pequeños en este verano?</h4>
@@ -238,14 +273,14 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="col-md-4 hidden-xs">
           <div class="box"><img src="assets/image/img_reporteroc.png">
             <div class="info">
-              <h4>Reportero ciudadano</h4><img src="assets/image/img_sd_reporteroc.jpg">
+              <h4>Reportero ciudadano</h4><img src="assets/image/img_sd_reporteroc.jpg" class="car">
               <p><strong>Estacionamiento indebido</strong></p>
               <p>¿Está permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.</p>
             </div>
-            <button class="button-default">ENVIAR FOTOS</button><a href="#">Más fotos</a>
+            <button class="btn btn-default">ENVIAR FOTOS</button><a href="#">Más fotos</a>
           </div>
         </div>
       </div>

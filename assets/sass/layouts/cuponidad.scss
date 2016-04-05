@@ -1,0 +1,128 @@
+$color-rojo-oscuro: #941010;
+$color-gris-oscuro:#848484;
+$color-morado:#BF00FF;
+$color-rojo:#DF0101;
+$color-twitter:#4BB7D9;
+$color-facebook:#2A65A1;
+.box{
+	background-image: url('../image/trama_square.jpg');
+	background-repeat:  repeat;
+	padding: 0 10px 20px 10px ;
+	img{
+		position:relative;
+		top:30px;
+		left:120px;
+	}
+	.info{
+		background-color:white;
+		padding:30px 15px;
+		margin-bottom:10px;
+	}
+	.btn-default{
+		background-color:$color-rojo-oscuro;
+		width:100%;
+		color: white !important;
+		text-decoration:none;
+	}
+	a{
+		color:$color-rojo-oscuro;
+	}
+	.car{
+	}
+}
+.aweita{
+	margin-bottom:20px;
+	border:1px solid $color-gris-oscuro;
+	padding:15px 7px 0 7px;
+	.logo{
+		margin:auto!important;
+		text-align:center!important;
+	}
+	.plus{
+		border-bottom:5px solid $color-morado;
+		margin:auto;
+		width:150px;
+		.first{
+			color: $color-morado;
+		}
+		.second{
+			color:$color-rojo!important;
+		}
+	}
+}
+.block{
+	margin-bottom:10px;
+	h4{
+		display:inline-block;
+		width:150px;
+		font-size:13px;
+		font-weight:700;
+		position:relative;
+		top: 10px;
+	}
+}
+.line{
+	margin-top:20px;
+	margin-bottom:20px;
+	background-color:$color-facebook;
+	height:5px;
+	.photo{
+		margin:auto!important;	
+		background-color:$color-facebook;
+		color:white;
+		font-family:'Oswald';
+		width:150px;
+		text-align: center;
+	}
+	img{
+		margin-top:40px;
+		width:100%;
+	}
+	h3{
+		font-size:18px !important;
+	}
+}
+.images{
+	.imge{
+		width:100%!important;
+	}
+		.transparent{
+		width:90%;
+	    position: relative;
+	    top: -50px;
+	    background-color: white;
+	    margin-left: 10px;
+	    margin-right:10px!important;
+	    text-align: center;		
+	}
+}
+.redline{
+	margin-top:20px;
+	margin-bottom:20px;
+	background-color:$color-rojo-oscuro;
+	height:5px;
+	.carlincatura{
+		margin:auto!important;	
+		background-color:$color-rojo-oscuro;
+		color:white;
+		font-family:'Oswald';
+		width:150px;
+		text-align: center;
+	}
+	img{
+		margin-top:40px;
+		width:100%;
+	}
+	h3{
+		font-size:18px !important;
+		font-weight:700;
+	}
+}
+.edicion{
+	.news{
+		width:20%;
+	}
+	h4{
+		display: inline-block;
+	}
+}

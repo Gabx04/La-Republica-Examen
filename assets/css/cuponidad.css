@@ -1,0 +1,100 @@
+.box {
+  background-image: url("../image/trama_square.jpg");
+  background-repeat: repeat;
+  padding: 0 10px 20px 10px; }
+  .box img {
+    position: relative;
+    top: 30px;
+    left: 120px; }
+  .box .info {
+    background-color: white;
+    padding: 30px 15px;
+    margin-bottom: 10px; }
+  .box .btn-default {
+    background-color: #941010;
+    width: 100%;
+    color: white !important;
+    text-decoration: none; }
+  .box a {
+    color: #941010; }
+
+.aweita {
+  margin-bottom: 20px;
+  border: 1px solid #848484;
+  padding: 15px 7px 0 7px; }
+  .aweita .logo {
+    margin: auto !important;
+    text-align: center !important; }
+  .aweita .plus {
+    border-bottom: 5px solid #BF00FF;
+    margin: auto;
+    width: 150px; }
+    .aweita .plus .first {
+      color: #BF00FF; }
+    .aweita .plus .second {
+      color: #DF0101 !important; }
+
+.block {
+  margin-bottom: 10px; }
+  .block h4 {
+    display: inline-block;
+    width: 150px;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    top: 10px; }
+
+.line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #2A65A1;
+  height: 5px; }
+  .line .photo {
+    margin: auto !important;
+    background-color: #2A65A1;
+    color: white;
+    font-family: 'Oswald';
+    width: 150px;
+    text-align: center; }
+  .line img {
+    margin-top: 40px;
+    width: 100%; }
+  .line h3 {
+    font-size: 18px !important; }
+
+.images .imge {
+  width: 100% !important; }
+.images .transparent {
+  width: 90%;
+  position: relative;
+  top: -50px;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px !important;
+  text-align: center; }
+
+.redline {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #941010;
+  height: 5px; }
+  .redline .carlincatura {
+    margin: auto !important;
+    background-color: #941010;
+    color: white;
+    font-family: 'Oswald';
+    width: 150px;
+    text-align: center; }
+  .redline img {
+    margin-top: 40px;
+    width: 100%; }
+  .redline h3 {
+    font-size: 18px !important;
+    font-weight: 700; }
+
+.edicion .news {
+  width: 20%; }
+.edicion h4 {
+  display: inline-block; }
+
+/*# sourceMappingURL=cuponidad.css.map */

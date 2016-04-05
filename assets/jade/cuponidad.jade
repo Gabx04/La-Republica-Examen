@@ -9,22 +9,16 @@ html(lang='es')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
-        link(rel='stylesheet', type='text/css', href='assets/css/footer.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/cuponidad.css')
         link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
         mixin edicion(src,h4,red)
             .edicion
-                img(src=src)
+                img.news(src=src)
                 h4=h4
                 p=red
-        mixin rodrich(text)
-            .rodrich
-                img(src="assets/image/img_blogueros.jpg")
-                p Augusto Álvarez Rodrich
-                h4= text
         mixin separadored(p)
-            .redline
-                .carlincatura
-                    p=p
+            .carlincatura
+                p=p
         mixin separador(p)
             .photo
                 p=p
@@ -32,71 +26,90 @@ html(lang='es')
             .block
                 img(src= src)
                 h4=titulo
+        mixin rod
+            .col-md-4
+                img(src="assets/image/img_blogueros.jpg")
+            .col-md-8
+                h5 Charlie Hebdo, historia que no debe repetirse
+                p.red Augusto Álvarez Rodrich
     body
         aside
             .container
-                .row
+                .col-md-4.hidden-xs
                     img(src="assets/image/banner-aside-home.jpg")
-                .row
+                .col-md-4.hidden-xs
+                    .box
+                        img(src="assets/image/img_sucribe.png")
+                        .info 
+                            h4
+                                span.span Suscribete
+                                |  a nuestro boletín
+                            form(role='form')
+                              .form-group
+                                input.form-control(type='letter')
+                            button.btn.btn-default SUSCRIBE        
+                .col-md-4.hidden-xs
                     .aweita
-                        img(src="assets/image/logo_aweita.jpg")
+                        img.logo(src="assets/image/logo_aweita.jpg")
                         +block("assets/image/img_aweita.jpg","Juan Ramón Riquelme el adíos al 'Último 10' de Argentina")
                         +block("assets/image/img_aweita.jpg","Lewi Caroll:un día como hoy nació el autor de 'Alicia en el")
                         +block("assets/image/img_aweita.jpg","Juan Ramón Riquelme el adíos al 'Último 10' de Argentina")
                         +block("assets/image/img_aweita.jpg","Gameplay de 'Dead kings', el descargable premium de 'Assassin's")
                         .plus
                             p Más en 
-                                a(href="#") Aweita.pe
-                .row
+                                a.first(href="#") Aweita.pe
+                .col-md-4.col-xs-12
                     .line
                         +separador("FOTOS DESTACADAS")
                     img(src="assets/image/img_fotodes_prominent.jpg")
-                    h3 Lineas de Nasca: admiten prisión preventiva de 6 meses para activistas de Greenpeace | FOTOS                        
+                    h4 Lineas de Nasca: admiten prisión preventiva de 6 meses para activistas de Greenpeace | FOTOS                        
                     +block("assets/image/img_fotodes.jpg","Uchuraccay: El pueblo que recibe con flores a quienes llegan a pie | FOTOS")
                     +block("assets/image/img_fotodes.jpg","Alianza Lima vs Fénix. intimos ganaron 1-0 en 'Noche Blanquiazul' | VIDEOS Y FOTOS")
                     +block("assets/image/img_fotodes.jpg","Tomas Berdych derrotó 3-0 a Rafael Nadal y avanzó en el Australian Open | FOTOS")
                 hr
-                .row
+                .col-md-4.col-xs-12
                     .line
                         +separador("ESPECIALES")
+                    .images
                         .img
-                            img(src="assets/image/img_especiales_aside.jpg")
+                            img.imge(src="assets/image/img_especiales_aside.jpg")
                             .transparent
                                 p Régimen laboral juvenil
                         .img
-                            img(src="assets/image/img_especiales.jpg")
+                            img.imge(src="assets/image/img_especiales.jpg")
                             .transparent
                                 p COP 20
                         .img
-                            img(src="assets/image/fotogaleria_col03_01.jpg")
+                            img.imge(src="assets/image/fotogaleria_col03_01.jpg")
                             .transparent
                                 p Concentración de Medios
                         .img
-                            img(src="assets/image/img_sd_mascota.jpg")
+                            img.imge(src="assets/image/fotogaleria_col03_01.jpg")
                             .transparent
                                 p Especies peruanas en peligro de extinción
                 hr
-                .row
+                .col-md-4.col-xs-12
                     .redline
                         +separadored("Carlincatura del Día")
                     h3 Carlincaturas 30-01-2015
                     img(src="assets/image/img_carlincatura_sd.jpg")
                     a(href="#") Todas las Carlincaturas
                 hr
-                .row 
+                .col-md-4.hidden-xs 
                     .line
                         +separador("NUESTROS BLOGUEROS")
-                    +rodrich("Charlie Hebdo, historia que no debe repetirse")
-                    +rodrich("El único pulpín es Humala")
-                    +rodrich("Dios ha muerto... tengo las manos")
-                    +rodrich("El único pulpín es Humala")
-                    +rodrich("Charlie Hebdo, historia que no debe repetirse")
-                    +rodrich("El único pulpín es Humala")
-                    +rodrich("Dios ha muerto... tengo las manos")
-                    +rodrich("El único pulpín es Humala")
+                    +rod      
+                    +rod
+                    +rod
+                    +rod
+                    +rod
+                    +rod
+                    +rod
+                    +rod
+                    +rod
                     a(href="#") Todas los blogs
                 hr
-                .row
+                .col-md-4.hidden-xs
                     .redline
                         +separadored("EDICÍON IMPRESA")
                         h3 La República - Lima
@@ -105,7 +118,7 @@ html(lang='es')
                         +edicion("assets/image/img_impreso_sd.jpg","Lluvias en Arequipa inundan casas y causan caos en la calles","La República - Sur")
                         +edicion("assets/image/img_aside_author.jpg","El ojo de Oblitas","Domingo")
                 hr
-                .row
+                .col-md-4.hidden-xs
                     .line
                         +separador("INFOGRAFIAS")
                             .img
@@ -117,7 +130,7 @@ html(lang='es')
                                 .transparent
                                     p Evaluacion de la pobreza e indigencia en América Latina
                 hr
-                .row
+                .col-md-4.col-xs-12
                     .box
                         img(src="assets/image/img_pregunta.png")
                         .info 
@@ -131,7 +144,19 @@ html(lang='es')
                               label
                                 input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
                                 |         No
-                .row
+                            button.button-default VOTAR
+                            a(href="#") Ver resultados
+                        .info
+                            h4 La pregunta de ayer
+                            p ¿Cree usted que se militarizó la conmemoración del fallo de la Haya de Lima?
+                            .progress
+                              .progress-bar.progress-bar-success.active(role='progressbar', aria-valuenow='55', aria-valuemin='0', aria-valuemax='100', style='width:55%')
+                                | 55%
+                            .progress
+                              .progress-bar.progress-bar-danger.active(role='progressbar', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100', style='width:25%')
+                                | 25%
+                            a(href="#") Más fotos
+                .col-md-4.hidden-xs
                     .aweita
                         img(src="assets/image/logo_libero.jpg")
                         +block("assets/image/img_aweita.jpg","Florentina empató 1-1 en su visita al Genoa con gran actuación de Juan Varga[VIDEO]")
@@ -141,7 +166,7 @@ html(lang='es')
                         .plus
                             p Más en 
                                 a(href="#") Libero.pe
-                .row
+                .col-md-4.hidden-xs
                     .aweita
                         img(src="assets/image/logo_popular.jpg")
                         +block("assets/image/img_news_grid.jpg","Joshua Ivanoff está loco por olor de Melissa Loza")
@@ -150,8 +175,8 @@ html(lang='es')
                         +block("assets/image/img_news_grid.jpg","Philip Seymour Hoffman:Un año sin el premiado actor(VIDEO)")
                         .plus
                             p Más en 
-                                a(href="#") elPopular.pe
-                .row
+                                a(href="#") elPopular.pe//
+                .col-md-4.hidden-xs
                     .aweita
                         img(src="assets/image/logo_wapa.jpg")
                         +block("assets/image/img_news_grid.jpg","¿Cómo renovar el guardarropa de los mas pequeños en este verano?")
@@ -161,16 +186,16 @@ html(lang='es')
                         .plus
                             p Más en 
                                 a(href="#") Wapa.pe
-                .row
+                .col-md-4.hidden-xs
                     .box
                         img(src="assets/image/img_reporteroc.png")
                         .info
                             h4 Reportero ciudadano
-                            img(src="assets/image/img_sd_reporteroc.jpg")
+                            img.car(src="assets/image/img_sd_reporteroc.jpg")
                             p
                                 strong Estacionamiento indebido
                             p ¿Está permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.
-                        button.button-default ENVIAR FOTOS
+                        button.btn.btn-default ENVIAR FOTOS
                         a(href="#") Más fotos
 
         script(src='http://code.jquery.com/jquery-1.11.2.min.js')
