@@ -25,52 +25,59 @@ html(lang='es')
                     .col-xs-12.col-md-6
                         a(href="#").portada-principal
                             p JNE inpulsará campaña en favor de la aprobación de la Reforma Electoral
+                            .sombra
                     .col-xs-12.col-md-6
                         a(href="#").portada-secundaria.uno
                             p Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones |Fotos
+                            .sombra
                         a(href="#").portada-secundaria.dos
                             p Sub 20 Perú vs Paraguay: bicolor empató 1-1  y pasó al hexagonal final del Sudamericano |Video
+                            .sombra
         section#columnistas
             .container
                 .row
                     .col-xs-12
-                        .columnistas
-                            h2
-                                a columnistas
-                            .slider-container                            
-                                .slider
+                        h2
+                            a columnistas
+                        #myCarousel.carousel.slide(data-ride="carousel")
+                            ol.carousel-indicators
+                                li(data-target="#myCarousel", data-slide-to="0", class="active")
+                                li(data-target="#myCarousel", data-slide-to="1")
+                                li(data-target="#myCarousel", data-slide-to="2")
+                            div(role="listbox", class="carousel-inner")
+                                .item.active
                                     +mvll
                                     +alvarezrodrich
                                     +mvll
                                     +alvarezrodrich
                                     +mvll
                                     +columnistax
+                                .item
                                     +mvll
                                     +alvarezrodrich
                                     +mvll
                                     +alvarezrodrich
                                     +mvll
                                     +columnistax
+                                .item
                                     +mvll
                                     +alvarezrodrich
                                     +mvll
                                     +alvarezrodrich
                                     +mvll
                                     +columnistax
-                                .controllers
-                                    i.prev.fa.fa-circle
-                                    i.next.fa.fa-circle
+                            
                                 
                             
         section#avances
             .container
                 .row
                     .hidden-xs.col-md-4
-                        +avances("Mercado de Pases 2015", "Mercado de Pases 2015: altas, bajas y rumores de los equipos peraunos", "avance uno")
-                        +avances("Régimen laboral juvenil", "Ollanta Humala: los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes |VIDEO", "avance dos")
+                        +avances("Mercado de Pases 2015", "Mercado de Pases 2015: altas, bajas y rumores de los equipos peraunos", "noticia uno")
+                        +avances("Champions League", "¿Podrá el Real Madrid conseguir la Undécima?", "noticia dos")
                     .hidden-xs.col-md-4
-                        +avances("Champions League", "¿Podrá el Real Madrid conseguir la Undécima?", "avance tres")
-                        +avances("Super Bowl", "El Super Bowl XLIX: New England Patriots se consagró campeón la NFL al ganar 28-24 a Seahawks |VIDEO", "avance cuatro")
+                        +avances("Régimen laboral juvenil", "Ollanta Humala: los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes |VIDEO", "noticia tres")                        
+                        +avances("Super Bowl", "El Super Bowl XLIX: New England Patriots se consagró campeón la NFL al ganar 28-24 a Seahawks |VIDEO", "noticia cuatro")
         
         section#ultimasnoticias
             .container
@@ -115,22 +122,16 @@ html(lang='es')
                             +realmadrid
                             +realmadrid
 
-
-
-
-
-
-
-                                                
+                                           
                                                     
                     
 
 
         script(src='http://code.jquery.com/jquery-1.11.2.min.js')
-        script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
-        script(type='text/javascript', src='js/slick.min.js') 
-        script(type='text/javascript', src='js/bootstrap.min.js')               
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")               
         script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+        script(type='text/javascript', src='js/slick.min.js') 
+        
         script(type='text/javascript', src='js/modernizr.custom.68172.js')
         script(type='text/javascript', src='js/respond.js')
         script(type='text/javascript', src='js/main.js')

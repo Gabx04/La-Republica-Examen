@@ -9,8 +9,18 @@
 		letter-spacing: -1px;
 		margin: 20px 0;
 	}
+	a {
+		.sombra {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: linear-gradient(to bottom, transparent 10%, #0d0d0d 95%);
+		}
+	}
 	.portada-principal {
-		background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_grid_principal.jpg);
+		background-image: url(../image/img_grid_principal.jpg);
 		background-position: top;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -21,6 +31,7 @@
 		padding: 0 15px;
 		p {
 			@include titulares(28px);
+			z-index: 10;
 		}
 	}
 	.portada-secundaria {
@@ -34,13 +45,14 @@
 		padding: 0 15px;
 		p {
 			@include titulares(20px);
+			z-index: 10;
 		}
 		&.uno {
-			background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_grid_secundario.jpg);
+			background-image: url(../image/img_grid_secundario.jpg);
 			margin-bottom: 10px;
 		}
 		&.dos {
-			background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../image/post-img-sample.jpg);
+			background-image: url(../image/post-img-sample.jpg);
 			margin-top: 10px;
 		}
 	}
@@ -48,27 +60,39 @@
 #columnistas {
 	h2 {
 		@extend %titulosseccion;
+		background-color: #F2F2F2;
+		margin-bottom: 0; 
 	}
 }
-.slider {
+#myCarousel {
+	background-color: #F2F2F2;
 	width: 100%;
 	margin: auto;
-	background-color: #F2F2F2;
 	padding: 20px;
 	.node {
 		display: inline-block;
 	}
+	li {
+		border-color: $griswarm;
+		background-color: $griswarm;
+		&.active {
+			background-color: $coral;
+		}
+
+	}
 	.columnista {
 		width: 140px;
-		padding: 15px 10px;
+		height: 260px;
+		padding-left: 10px;
+		padding-right: 10px;
 		.foto-perfil {
 			width: 80px;
-			height: auto;
+			height: 80px;
 			padding: 5px;
 			background-color: white;
 			box-shadow: 0 0 2px gray;
 			display: block;
-			margin: 10px auto;
+			margin: 0 auto;
 			img {
 				width: 100%;
 				height: auto;
@@ -81,29 +105,126 @@
 			font-size: 12px;
 			font-weight: 700;
 			color: gray;
+			display: block;
+			margin: 10px; 
 		}
 		.titular {
 			text-align: center;
 			font-family: $OpenSans;
-			font-size: 14px;
+			font-size: 12px;
 			font-weight: 700;
 			color: #545454;
 		}
 
 	}
 }
-.controllers {
-	i {
-		font-size: 12px;
-		color: #B20000;
-		display: inline-block;
-	}
-}
 
 #avances {
+	font-family: $OpenSans !important;
 	.avance {
-		
+		border: 1px solid $griswarm;
+		margin-bottom: 30px;
+		padding: 10px 0;
+		text-align: center;
 	}
+	.tema-avance {
+		font-size: 18px;
+		font-weight: 700;
+		color: $coral;
+	}
+	.noticia {
+		background-size: cover;
+		background-position: top;
+		background-repeat: no-repeat;
+		background: linear-gradient(to bottom, transparent 0%, black 60%);
+		height: 180px;
+		width: 100%;
+		display: block;
+		position: relative;
+		padding: 0 15px;
+		&.uno {
+			background-image: url(../image/img_especiales.jpg);	
+		}
+		&.dos {
+			background-image: url(../image/img_video_destacado.jpg);	
+		}
+		&.tres {
+			background-image: url(../image/un-image--thumb-01.jpg);	
+		}
+		&.cuatro {
+			background-image: url(../image/noticias-relacionadas-image-slider-thumb.jpg);	
+		}
+		.titular-avance {
+			@include titulares(18px);
+			text-align: left;
+			z-index: 10;
+		}
+		.sombra {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: linear-gradient(to bottom, transparent 30%, #262626 80%);
+		}
+	}
+	.todosobre {
+		color: black;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		span {
+			font-weight: 700;
+			margin-left: 2px;
+		}
+	}
+}
+#ultimasnoticias {
+	margin-bottom: 30px;
+	h3 {
+		font-family: $Oswald;
+		color: $griscold;
+		font-size: 16px;
+		img {
+			height: 13px;
+			margin-left: 7px;
+			margin-bottom: 5px;
+		}
+	}
+	.latest-news {
+		margin: 5px auto;
+	}
+	.noticiareciente {
+		border-bottom: 1px solid $griswarm;
+		margin-top: 25px;
+		margin-right: 20px;
+		padding-bottom: 10px;
+		@include clearfix;
+		.imagen-noticia{
+			float: left;
+			img {
+				max-width: 200px;
+				height: auto;
+				margin-right: 20px;
+				margin-bottom: 5px;
+			}
+		}
+	}
+	.contenido {
+		p {
+			font-family: $PTSans;
+			margin-top: 10px;
+		}
+	}
+	.horapublicacion {
+		font-family: $PTSans;
+		font-size: 12px;
+	}
+	.titulo-reciente {
+		font-family: $OpenSans;
+		font-size: 16px;
+		font-weight: 700;
+	}
+
 }
 #share {
 	position: relative;
