@@ -10,11 +10,14 @@ html(lang='es')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
         link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/header.css')   
+        link(rel='stylesheet', type='text/css', href='assets/css/footer.css') 
     body
         include ./_variables
         include ./_extends
         include ./_mixins
 
+        include header
         #contacto
             .container
                 .row 
@@ -41,6 +44,7 @@ html(lang='es')
                             
                                 textarea(type="text", class="formulario", rows="5" placeholder="Mensaje")
                                 button(type="submit", class="btn-contacto") ENVIAR
+        include footer
 
         script(src='http://code.jquery.com/jquery-1.11.2.min.js')
         script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')

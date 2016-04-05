@@ -6,20 +6,19 @@ html(lang='es')
         link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700', rel='stylesheet', type='text/css')
         link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
         link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
-<<<<<<< HEAD
         link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
-        link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.css')
-=======
         link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
->>>>>>> 2d039511d4092663d11ca03d70db98c3cf618925
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
         link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
         link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/header.css')   
+        link(rel='stylesheet', type='text/css', href='assets/css/footer.css')
     body
         include ./_variables
         include ./_extends
         include ./_mixins
-        
+
+        include header
         section#portada
             .container
                 .row
@@ -130,7 +129,7 @@ html(lang='es')
                                            
                                                     
                     
-
+        include footer
 
         script(src='http://code.jquery.com/jquery-1.11.2.min.js')
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")               
