@@ -1,0 +1,97 @@
+#contacto{
+	font-family: $OpenSans;
+	padding: 30px 20px;
+	h1 {
+		font-size: 45px;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.texto {
+		font-size: 13px;
+		margin-bottom: 40px;
+	}
+
+	.borde {
+		padding-left: 5%;
+		padding-right: 5%;
+		margin: 0 auto;
+		@media (min-width: 500px) {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		@media (min-width: 800px) {
+			padding-left: 20%;
+			padding-right: 20%;
+		}
+
+	}
+	
+	form {
+		margin: 0 auto;
+	}
+	label{
+		font-weight: 400;
+	}
+	#formulariousuario{
+		input {
+			background-color: #EEE;
+			font-size: 13px;
+			display: block;
+			border-radius: 4px;
+			padding: 5px 8px;
+			margin: 25px auto 10px;
+			width: 100%;
+			outline: transparent;
+		}
+	}
+	h3 {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	#destinatario {
+		input {
+			@media (min-width: 800px) {
+				float: left;
+			}
+		}
+		label {
+			&.destinatario1 {
+			text-align: left;
+			margin-left: 5px;
+			font-size: 13px;	
+			}
+			&.destinatario2 {
+				font-size: 11px;
+				font-weight: 700;
+				@media (min-width: 800px) {
+					text-align: right;
+					float: right;
+					font-weight: 400;
+				}
+			}
+		}
+		textarea {
+			display: block;
+			font-size: 13px;
+			width: 100%;
+			background-color: #EEE;
+			border-radius: 5px;
+			padding: 5px 8px;
+			margin: 30px 0 15px;
+			border: 2px inset white;
+			outline: transparent;
+		}
+		button {
+			background-color: black;
+			color: #fff;
+			border-radius: 4px;
+			border: none;
+			padding: 7px 70px;
+			margin: 0 auto 30px;
+			display: block;
+		}
+	}
+	
+}

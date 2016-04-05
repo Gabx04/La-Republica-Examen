@@ -2,7 +2,45 @@ mixin redsocial(alt)
 	p.crop
 		a(href="#")
 			img(src="assets/image/social_sprite.png", alt= alt)
+mixin columnistas(src, nombre, titular)
+	.node
+		.columnista.text-center
+			a(href="#").foto-perfil
+				img(src= src, alt= nombre)
+			a.nombre= nombre
+			p.titular= titular
+mixin mvll
+	+columnistas("assets/image/img-columnistas.jpg", "Mario Vargas Llosa", "Megarrenuncias apulpinantes")
+mixin alvarezrodrich
+	+columnistas("assets/image/img_blogueros.jpg", "Augusto Álvarez Rodrich", "Respuesta a una derrota estridente")
+mixin columnistax
+	+columnistas("assets/image/img_blogueros.jpg", "Mario Vargas Llosa", "Megarrenuncias apulpinantes")
+mixin avances(tema, titular, clasenoticia)
+	.avance
+		p.tema-avance= tema
+		a(class= clasenoticia, href="#")
+			p.titular-avance= titular
+			.sombra
+		p.todosobre Todo sobre
+			span #{tema}
+mixin reciente(tituloreciente, src, contenidoreciente)
+	.noticiareciente
+		p.horapublicacion Hace 1 hora 12 mins
+		p.titulo-reciente= tituloreciente
+		.imagen-noticia
+			img(src= src, alt="foto noticia")
+		.contenido
+			p= contenidoreciente
+mixin emma()
+	+reciente(tituloemma, "assets/image/img_news.jpg", contenidoemma)
+mixin roque()
+	+reciente(tituloroque, "assets/image/un-image--thumb-01.jpg", contenidoroque)
+mixin notayt()
+	+reciente(tituloyt, "assets/image/img_sd_mascota.jpg", contenidoemma)
+mixin realmadrid()
+	+reciente(titulorealmadrid, "assets/image/img_video_destacado.jpg", contenidorealmadrid)
 
+<<<<<<< HEAD
 
 
 
@@ -228,3 +266,21 @@ mixin title(name, descripcion)
 
 
 
+=======
+mixin redes()
+	ul#share
+		li#fb
+			a(href="#")
+		li#tw
+			a(href="#")
+		li#gplus
+			a(href="#")
+mixin formulario(placeholder)
+	input(type="text", class="form", placeholder=placeholder)
+
+mixin opciones(textouno, textodos)
+	.form-item.form-type-radios.form-item-cid
+		input(class="form-radio", type="radio")
+		label.destinatario1= textouno
+		label.destinatario2= textodos
+>>>>>>> 2d039511d4092663d11ca03d70db98c3cf618925
